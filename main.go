@@ -7,8 +7,8 @@ type Human struct {
 	Age  int
 }
 
-func (h *Human) Speak() {
-	fmt.Println("Прив, меня зовут", h.Name, "\nМне", h.Age)
+func (h Human) Speak() {
+	fmt.Println("Привет меня зовут", h.Name, "мне", h.Age, "лет")
 }
 
 type Action struct {
@@ -18,7 +18,7 @@ type Action struct {
 func main() {
 	action := Action{
 		Human: Human{
-			Name: "Антон",
+			Name: "Anton",
 			Age:  27,
 		},
 	}
