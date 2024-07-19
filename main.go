@@ -16,11 +16,11 @@ type Action struct {
 }
 
 func main() {
-	actiom := Action{
+	action := Action{
 		Human: Human{
 			Name: "Anton",
 			Age:  27,
 		},
 	}
-	actiom.Speak()
+	action.Speak()
 }
